@@ -74,6 +74,8 @@ public class NearActivity extends FragmentActivity implements OnMapReadyCallback
         Log.d(tag, "Lat ==> " + latADouble);
         Log.d(tag, "Lng ==> " + longADouble);
 
+        createCenterMap();
+
     }   //onResume
 
     @Override
@@ -156,10 +158,19 @@ public class NearActivity extends FragmentActivity implements OnMapReadyCallback
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
-        // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(-34, 151);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+        //Create Center map Marker User
+        createCenterMap();
+
     }   //onmap
+
+    private void createCenterMap() {
+       try {
+           LatLng latlng = new LatLng(latADouble, longADouble);
+           mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latlng, 16));
+
+       }catch (Exception e){
+           e.printStackTrace();
+       }
+    }
 
 }   // Main Class
