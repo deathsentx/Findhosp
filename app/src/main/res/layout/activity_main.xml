@@ -5,21 +5,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="findhosp.com.findhosp.MainActivity">
-
-
+<LinearLayout
+    android:layout_centerInParent="true"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
     <ImageView
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/question_man"
         android:id="@+id/imvHuman"
         android:layout_width="@dimen/icon"
         android:layout_height="@dimen/icon"
-        android:background="@color/colorAccent"
         />
 
     <ImageView
-        android:layout_marginTop="@dimen/icon"
-        android:layout_below="@id/imvHuman"
+        android:layout_marginTop="@dimen/margin"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/speaker"
         android:id="@+id/imvAnimal"
         android:layout_width="@dimen/icon"
         android:layout_height="@dimen/icon"
-        android:background="@color/colorAccent" />
+        />
+
+</LinearLayout>
+
+
 
 </RelativeLayout>
