@@ -41,6 +41,8 @@ public class NearActivity extends FragmentActivity implements OnMapReadyCallback
         //Setup
         mySetup();
 
+
+
         // create map Fragment
         createFragment();
 
@@ -162,7 +164,14 @@ public class NearActivity extends FragmentActivity implements OnMapReadyCallback
         //Create Center map Marker User
         createCenterMap();
 
+        //SynChronize Location
+        synLocation();
+
     }   //onmap
+
+    private void synLocation() {
+
+    }
 
     private void createCenterMap() {
        try {
