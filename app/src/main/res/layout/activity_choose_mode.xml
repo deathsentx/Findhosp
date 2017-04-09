@@ -10,17 +10,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:background="@color/colorAccent">
+
 
         <ImageView
-            android:id="@+id/imvHuman"
+            android:id="@+id/imvNear"
             android:layout_width="@dimen/icon"
             android:layout_height="@dimen/icon"
             android:layout_gravity="center_horizontal"
             android:src="@drawable/question_man" />
 
         <ImageView
-            android:id="@+id/imvAnimal"
+            android:id="@+id/imvFilter"
             android:layout_width="@dimen/icon"
             android:layout_height="@dimen/icon"
             android:layout_gravity="center_horizontal"
