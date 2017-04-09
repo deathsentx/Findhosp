@@ -168,6 +168,7 @@ public class NearActivity extends FragmentActivity implements OnMapReadyCallback
         synLocation();
 
     }   //onmap
+    //
 
     private void synLocation() {
 
