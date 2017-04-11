@@ -185,7 +185,7 @@ public class NearActivity extends FragmentActivity implements OnMapReadyCallback
            mMap.clear();
 
            //Create Marker
-           createMarker(latlng, R.mipmap.ic_user, "คุณอยู่ที่นี่","ในขณะนี้คุรอยู๋ที่นี่ คะ");
+           createMarker(latlng, R.mipmap.ic_user, "คุณอยู่ที่นี่","ในขณะนี้ คุณอยู่ที่นี้ค่ะ");
 
 
        }catch (Exception e){
